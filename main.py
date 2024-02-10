@@ -1,3 +1,5 @@
+import gspread
+
 def enter_data_in_sheet(generated_data):
     sa = gspread.service_account(filename='noble-beanbag-402311-a10998e0a452.json')
     sheet = sa.open("SCRAPING OUTPUT")
